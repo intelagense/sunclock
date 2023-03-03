@@ -1,0 +1,181 @@
+/******************************************
+/* NOTES
+/*******************************************/
+
+/* 1029 596 origin */
+/* 2058 1782 img size */
+ 
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+  font-family: 'Gruppo', sans-serif;
+  /* background-color: black; */
+  /* max-width: 1080px; */
+}
+body {
+  font-size: 1.6rem;
+  color: white;
+  background-color: black;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: aliceblue;
+}
+a:hover {
+  color: beige;
+}
+a:active {
+  color: snow;
+}
+
+/* brings input above overlapping map container when rotating */
+input,
+label{
+  position: relative; z-index: 1;
+}
+input {
+  width: 8rem;
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  color: snow;
+  background-color: black;
+  border: 2px solid midnightblue;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: midnightblue;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid midnightblue;  /* creates padding around scroll thumb */
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.center{
+  display: flex;
+  justify-content: center;
+  
+}
+.vertical{
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+
+  background-color: orange;
+  text-align: center;
+  color: black;
+}
+header span{
+  font-size: 5rem;
+}
+
+h1{ 
+  font-size: 5vw;
+}
+
+label{
+  text-align: center;
+}
+
+main {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(orange, midnightblue, rgb(0, 0, 0, .25));
+  padding-top: 75px;
+}
+main h3{
+  transform: rotate(270deg);
+}
+main h3 ~ h3{
+  transform: rotate(90deg);
+}
+
+main h3{
+  z-index: 1;
+  align-self: center;
+  margin-top: -125px;
+}
+main section{
+display: flex;
+justify-content: center;
+
+
+}
+
+img {
+  max-height: 50vh;
+  max-width: 80vw;
+  transform-origin: 50% 33.3333%;
+  filter: drop-shadow(0 0 .5rem skyblue) hue-rotate(15deg);
+}
+
+footer section{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  align-items: baseline;
+  font-size: 4vw;
+}
+
+.attribution a{
+  color: lightgray;
+}
+.attribution{
+  margin-top: 20px;
+  color: lightgray;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+  font-size: .85rem;
+
+}
+
+h4{
+
+  font-size: 1rem;
+}
+
+
+

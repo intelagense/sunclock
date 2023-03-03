@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Approximates current solar noon and light level on a map of earth divided into three sectors">
+  	<meta name="keywords" content="time, solar, sun">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>SunClock</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="timeNow">SOLAR NOON</h1>
+			<span>↓</span>
+		</header>
+		<main>
+			<h3>Sunrise →</h3>
+			<section>
+				<img id="clockFace" src="earth.png" alt="">
+			</section>
+			<h3>Sunset →</h3>
+		</main>
+		<section class="center vertical">
+			<label for="number">Current Time Offset:<br>
+			  <input type="number" id="number" name="number" placeholder="+ / -">
+      </label>
+		</section>
+		<footer>
+			<section>
+			<h3>Morning</h3>
+
+			<h3>Evening</h3>
+			</section>
+      <section class="attribution">
+        <h4>made by <a href="https://intelagense.com/">intelagense</a></h4>
+      </section>
+			<section class="attribution"><span><a href="https://commons.wikimedia.org/wiki/File:Lee_Conformal_World_in_a_Tetrahedron_projection.png">"Lee conformal tetrahedric projection of the world centered on the south pole."</a><a href="https://commons.wikimedia.org/wiki/User:Justinkunimune">Justin Kunimune </a> , used under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> / Transparency added</span></section>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
